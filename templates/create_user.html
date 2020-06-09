@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet"
+            href="../build/css/create_user.css" type="text/css">
+        <title>Create new user</title>
+    </head>
+
+    <body>
+        <h2>Create a new user</h2>
+
+        <form id="create-new-user-form">
+            <label for="firstname">First Name</label>
+            <input type="text" class="input" id="firstname" name="firstname">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" class="input" id="lastname" name="lastname">
+
+            <label for="username">Username</label>
+            <input type="text" class="input" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input type="text" class="input" id="password" name="password">
+
+            <label for="male" class="radio">
+                <span>Male</span>
+                <input type="radio" id="male" name="gender">
+            </label>
+
+            <label for="female" class="radio">
+                <span>Female</span>
+                <input type="radio" id="female" name="gender">
+            </label>
+
+            <label for="picurl">Picture URL</label>
+            <input type="text" class="input" id="picurl" name="picurl">
+
+            <label for="text">Information about the author</label>
+            <textarea name="text" form="create-new-user-form">Enter text here...</textarea>
+
+            <input type="submit" value="Register" id="submit-btn">
+
+        </form>
+    </body>
+
+</html>

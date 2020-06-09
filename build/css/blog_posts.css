@@ -1,0 +1,28 @@
+.blogs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10%;
+}
+
+.blog {
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #230a74;
+}
+
+img {
+  width: 200px;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  background-color: #04010d;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+/*# sourceMappingURL=blog_posts.css.map */
