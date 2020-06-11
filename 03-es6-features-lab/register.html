@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/register.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+    <script src="src/handle_user/handle_user.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <!-- ********* reusing the CSS from main.css for the header *********** -->
+    <header>
+      <h2 class="header_title">MyBlogs</h2>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/usersProfile.html">User's profile</a>
+        <a href="/register.html">Register</a>
+        <a href="/login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <form class="register" id="create-user-form">
+        <div class="form_info">
+          <div class="form_column-1">
+            <input id="first-name" type="text" placeholder="First name *"
+              autofocus required/>
+            <input id="last-name" type="text" placeholder="Last name *" required/>
+            <input id="username" type="text" placeholder="Username *"
+              maxlength="15" required/>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password *"
+              minlength="8"
+              required
+              />
+          </div>
+
+          <div class="form_column-2">
+            <label>Gender*:</label>
+            <div class="form_radioBtn-container">
+              <input value="male" type="radio" name="gender" required/>
+              <label for="gender">Male</label>
+            </div>
+            <div class="form_radioBtn-container">
+              <input value="female" type="radio" name="gender" required/>
+              <label for="gender">Female</label>
+            </div>
+            <div class="form_radioBtn-container">
+              <input value="non-binary" type="radio" name="gender" required/>
+              <label for="gender">Non-binary</label>
+            </div>
+
+            <label>Role*:</label>
+            <div class="form_radioBtn-container">
+              <input value="user" type="radio" name="role" required/>
+              <label for="role">User</label>
+            </div>
+            <div class="form_radioBtn-container">
+              <input value="admin" type="radio" name="role" required/>
+              <label for="role">Admin</label>
+            </div>
+          </div>
+
+          <div class="form_column-3">
+            <textarea id="text" placeholder="How would you describe yourself?"
+              maxlength="512" required></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Sign up" />
+      </form>
+      <button id="find-user">Find User</button>
+      <button id="update-user">Update User</button>
+      <button id="delete-user">Delete User</button>
+    </main>
+
+    <!-- ********* reusing the CSS from main.css for the footer *********** -->
+    <footer>
+      <i class="fa fa-github-square"></i>
+      <i class="fa fa-linkedin-square"></i>
+      <i class="fa fa-pinterest-square"></i>
+      &copy; Lyuben Tenekedzhiev
+    </footer>
+  </body>
+</html>
